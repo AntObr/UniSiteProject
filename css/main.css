@@ -1,0 +1,103 @@
+/*-----------------------------------------------MAIN-----------------------------------------------*/
+
+/*Resets the margin and padding on the body to 0*/
+body {
+    margin: 0;
+    padding: 0;
+/*Sets fonts fot the website*/
+    font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+}
+
+#banner {
+/*Sets and bounds the background image*/
+    background-image: url(https://s24.postimg.org/xmtgyi0lh/DSC_0159.jpg);
+    background-position: center;
+    background-size: cover;
+/*Controls the size of the banner*/
+    height: 300px;
+    width: 100%;
+}
+
+/*Sets menu fonts*/
+#menu {
+    font-weight: 550;
+    font-size: 1.25em;
+/*Adds a drop shadow to the top and bottom*/
+    box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.2), 0px -10px 5px rgba(0, 0, 0, 0.2);
+/*Adds a border to the top and bottom*/
+    border: 1px solid black;
+    border-right: none;
+    border-left: none;
+}
+
+/*Removes styling from the list adding background*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+/*Aligns the list items*/
+li {
+    float: left;
+}
+
+/*Styles and aligns links*/
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/*Gives hover effect to menu elements*/
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+/*Aligns the dropdown elements*/
+li.dropdown {
+    display: inline-block;
+}
+
+/*Aligns and styles the drop down box*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/*aligns and styles the drop down elements*/
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/*Adds hover effect to the drop down elements*/
+.dropdown-content a:hover {
+    background-color: indianred
+}
+
+/*Causes drop down to display on hover*/
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*-----------------------------------------------PLATFORMER-----------------------------------------------*/
+
+/*Handles the canvas for the platformer*/
+canvas {
+	border: 5px solid black;
+    padding: 0;
+    margin: auto;
+    display: block;
+}
