@@ -4,6 +4,8 @@
 body {
     margin: 0;
     padding: 0;
+/*Creates a bottom margin on the body making it nicer to read*/
+    margin-bottom: 100px;
 /*Sets fonts fot the website*/
     font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
 }
@@ -90,6 +92,16 @@ li.dropdown {
 /*Causes drop down to display on hover*/
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+/*-----------------------------------------------MAIN-----------------------------------------------*/
+
+#main {
+    text-align: center;
+}
+
+#main a {
+    color: red;
 }
 
 /*-----------------------------------------------PLATFORMER-----------------------------------------------*/
