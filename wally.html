@@ -1,0 +1,60 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Anthony O'Brien</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+	</head>
+
+	<body>
+        <div id="banner"></div>
+        
+        <div id="menu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li class="dropdown">
+                    <a href="projects.html" class="dropbtn">PROJECTS</a>
+                    <div class="dropdown-content">
+                        <a href="projects.html">All Projects</a>
+                        <a href="platformer.html">HTML5 Platformer</a>
+                    </div>
+                </li>
+                <li><a href="wally.html">WHERE'S WALLY?</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        
+        <div id="main">
+            <p>Can you find wally?</p>
+            
+            <img src="https://s27.postimg.org/wetob275v/wally.jpg" alt="Where's Wally?" title="Where's Wally?" width="1024" height="768" usemap="#wally" />
+            <map name="wally">
+                <area shape="rect" coords="526,361,556,408" alt="Wally!" title="Wally!" onclick="wally(0);" />
+                <area shape="rect" coords="621,354,657,408" alt="Wizard Whitebeard!" title="Wizard Whitebeard!" onclick="wally(1);" />
+                <area shape="rect" coords="237,360,260,422" alt="Odlaw!" title="Odlaw!" onclick="wally(2)" />
+            </map>
+            
+        </div>
+	</body>
+    
+    <footer>
+        <script>
+            function wally (n) {
+                switch (n) {
+                    case 0:
+                        alert("You found Wally!");
+                        break;
+                    case 1:
+                        alert("You found Wizard Whitebeard!");
+                        break;
+                    case 2:
+                        alert("You found Odlaw!")
+                        break;
+                }
+            }
+        </script>
+    </footer>
+</html>
