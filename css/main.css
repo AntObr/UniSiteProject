@@ -86,7 +86,7 @@ li.dropdown {
 
 /*Adds hover effect to the drop down elements*/
 .dropdown-content a:hover {
-    background-color: indianred
+    background-color: red;
 }
 
 /*Causes drop down to display on hover*/
